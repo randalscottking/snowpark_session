@@ -1,0 +1,11 @@
+from snowflake.snowpark import Session
+connection_parameters = {
+  "account": "<your snowflake account>",
+  "user": "<your snowflake user>",
+  "role":"<your snowflake role>",
+  "database":"<your snowflake database>",
+  "schema":"<your snowflake schema",
+  "warehouse":"<your snowflake warehouse>",
+  "authenticator":"externalbrowser"
+}
+session = Session.builder.configs(connection_parameters).create()
