@@ -4,7 +4,7 @@ connection_parameters = {
   "user": "rscottking1973",
   "role":"ACCOUNTADMIN",
   "database":"SNOWFLAKE_SAMPLE_DATA",
-  "schema":"<your snowflake schema",
+  "schema":"TPCH-SF10",
   "warehouse":"COMPUTE_WH",
   "authenticator":"externalbrowser"
 }
