@@ -1,4 +1,6 @@
 from snowflake.snowpark import Session
+
+#List Connection Parameters
 connection_parameters = {
   "account": "isrwwph-CIB94565",
   "user": "rscottking1973",
@@ -8,4 +10,6 @@ connection_parameters = {
   "warehouse":"COMPUTE_WH",
   "authenticator":"externalbrowser"
 }
+
+#Create the connection
 session = Session.builder.configs(connection_parameters).create()
